@@ -240,8 +240,203 @@
             "Utiliser le modèle entraîné pour faire des prédictions basées sur les caractéristiques des données.",
             "Transformer de nouvelles données d'entrée en un ensemble de caractéristiques pour une future extraction."
         ]
+    },
+    {
+        "question": "Quelle est la différence principale entre les suppressions par paires (Pairwise Deletions) et la suppression listwise (Dropping entire rows)?",
+        "answer": "La suppression par paires ne supprime que les valeurs manquantes pour les variables spécifiques utilisées dans l'analyse, tandis que la suppression listwise supprime toute la ligne si une seule valeur est manquante.",
+        "imgURI": "https://live.staticflickr.com/1816/30212411048_2a1d7200e2_b.jpg",
+        "choices": [
+            "Il n'y a pas de différence; les deux méthodes sont identiques.",
+            "La suppression par paires est utilisée uniquement pour les séries temporelles, tandis que la suppression listwise est générale.",
+            "La suppression listwise supprime les colonnes avec des valeurs manquantes, pas les lignes.",
+            "La suppression par paires ne supprime que les valeurs manquantes pour les variables spécifiques utilisées dans l'analyse, tandis que la suppression listwise supprime toute la ligne si une seule valeur est manquante."
+        ]
+    },
+    {
+        "question": "Qu'est-ce que l'imputation basée sur le plus proche voisin (kNN Based) dans le traitement des valeurs manquantes?",
+        "answer": "Une méthode où les valeurs manquantes sont imputées en utilisant les valeurs des voisins les plus proches dans l'espace des caractéristiques.",
+        "choices": [
+            "Une méthode où chaque valeur manquante est remplacée par la moyenne de toutes les valeurs disponibles.",
+            "Une technique où les valeurs manquantes sont remplacées par zéro.",
+            "Une méthode où les valeurs manquantes sont imputées en utilisant les valeurs des voisins les plus proches dans l'espace des caractéristiques.",
+            "Un processus où les valeurs manquantes sont laissées telles quelles pour être traitées par l'algorithme d'apprentissage."
+        ],
+        "imgURI": "https://live.staticflickr.com/1816/30212411048_2a1d7200e2_b.jpg"
+    },
+    {
+        "question": "Quelles sont les méthodes d'imputation spécifiques aux séries temporelles pour traiter les valeurs manquantes?",
+        "answer": "Forward Fill et Backfill, où les valeurs manquantes sont remplacées respectivement par la dernière valeur connue avant et la première valeur connue après.",
+        "choices": [
+            "Imputation par la médiane et par la moyenne.",
+            "Forward Fill et Backfill, où les valeurs manquantes sont remplacées respectivement par la dernière valeur connue avant et la première valeur connue après.",
+            "Suppression listwise et suppression des colonnes entières.",
+            "Imputation MICE et imputation basée sur le plus proche voisin (kNN)."
+        ],
+        "imgURI": "https://live.staticflickr.com/1816/30212411048_2a1d7200e2_b.jpg"
+    },
+    {
+        "question": "Qu'est-ce que l'imputation MICE et dans quel contexte est-elle considérée comme une approche avancée?",
+        "answer": "Multiple Imputation by Chained Equations (MICE) est une technique d'imputation multiple qui traite chaque variable avec des valeurs manquantes comme une fonction des autres variables, dans un processus itératif.",
+        "choices": [
+            "Multiple Imputation by Chained Equations (MICE) est une technique d'imputation multiple qui traite chaque variable avec des valeurs manquantes comme une fonction des autres variables, dans un processus itératif.",
+            "MICE est une méthode simple qui remplace les valeurs manquantes par la valeur la plus fréquente de la colonne.",
+            "MICE est une technique qui ne s'applique qu'aux données catégorielles pour remplacer les valeurs manquantes.",
+            "MICE est un outil de visualisation pour identifier les valeurs manquantes dans les données."
+        ],
+        "imgURI": "https://live.staticflickr.com/1816/30212411048_2a1d7200e2_b.jpg"
+    },
+    {
+        "question": "Quand est-il approprié d'utiliser la suppression de colonnes entières dans le traitement des valeurs manquantes?",
+        "answer": "Quand une colonne contient un pourcentage élevé de valeurs manquantes, au point que son imputation risque de fausser l'analyse.",
+        "choices": [
+            "C'est l'approche standard et doit être utilisée pour tous les types de données manquantes.",
+            "Lorsque les valeurs manquantes sont complètement aléatoires et sans aucune tendance.",
+            "Quand une colonne contient un pourcentage élevé de valeurs manquantes, au point que son imputation risque de fausser l'analyse.",
+            "Uniquement dans les cas où les données sont des séries temporelles."
+        ],
+        "imgURI": "https://live.staticflickr.com/1816/30212411048_2a1d7200e2_b.jpg"
+    },
+    {
+        "question": "Quel est le principal objectif de la standardisation des caractéristiques dans le prétraitement des données pour le Machine Learning ?",
+        "answer": "Modifier l'échelle de vos données pour avoir un écart-type unitaire.",
+        "choices": [
+            "Convertir toutes les caractéristiques en valeurs binaires.",
+            "Modifier l'échelle de vos données pour avoir un écart-type unitaire.",
+            "Regrouper les données en clusters distincts.",
+            "Réduire le nombre de caractéristiques pour simplifier le modèle."
+        ],
+        "imgURI": "https://live.staticflickr.com/1816/30212411048_2a1d7200e2_b.jpg"
+    },
+    {
+        "question": "Comment la normalisation des caractéristiques affecte-t-elle les données lors du processus de mise à l'échelle ?",
+        "answer": "Elle change la forme de la distribution des données pour qu'elles se situent entre 0 et 1.",
+        "choices": [
+            "Elle change la forme de la distribution des données pour qu'elles se situent entre 0 et 1.",
+            "Elle augmente la variance des données pour améliorer la séparation des classes.",
+            "Elle convertit toutes les données en valeurs entières.",
+            "Elle ne modifie pas les données mais ajoute des caractéristiques supplémentaires."
+        ],
+        "imgURI": "https://live.staticflickr.com/1816/30212411048_2a1d7200e2_b.jpg"
+    },
+    {
+        "question": "Quelle formule décrirait correctement la normalisation d'une caractéristique donnée ?",
+        "answer": "X_new = (X - X_min) / (X_max - X_min)",
+        "choices": [
+            "X_new = (X - Mean) / Standard deviation",
+            "X_new = X / X_max",
+            "X_new = (X - X_min) / (X_max - X_min)",
+            "X_new = X - X_mean"
+        ],
+        "imgURI": "https://live.staticflickr.com/1816/30212411048_2a1d7200e2_b.jpg"
+    },
+    {
+        "question": "Quelle formule est utilisée pour la standardisation d'une caractéristique en Machine Learning ?",
+        "answer": "X' = (X - Mean) / Standard deviation",
+        "choices": [
+            "X' = (X - X_min) / (X_max - X_min)",
+            "X' = (X - Mean) / Standard deviation",
+            "X' = X / X_max",
+            "X' = X - X_min"
+        ],
+        "imgURI": "https://live.staticflickr.com/1816/30212411048_2a1d7200e2_b.jpg"
+    },
+    {
+        "question": "Quelle est la différence entre la normalisation et la standardisation en termes d'effet sur les données ?",
+        "answer": "La normalisation modifie la plage des données, tandis que la standardisation modifie l'échelle pour avoir une moyenne de zéro et un écart-type unitaire.",
+        "choices": [
+            "La normalisation rend la distribution des données normale, tandis que la standardisation les rend égales à un.",
+            "La normalisation et la standardisation sont identiques et peuvent être utilisées de manière interchangeable.",
+            "La normalisation modifie la plage des données, tandis que la standardisation modifie l'échelle pour avoir une moyenne de zéro et un écart-type unitaire.",
+            "La standardisation supprime les valeurs extrêmes, tandis que la normalisation les met en évidence."
+        ],
+        "imgURI": "https://live.staticflickr.com/1816/30212411048_2a1d7200e2_b.jpg"
+    },
+    {
+        "question": "En Machine Learning, spécifiquement dans les réseaux de neurones, qu'est-ce qu'un neurone ?",
+        "answer": "Une unité de calcul qui reçoit des entrées, les pondère, les somme, et applique une fonction d'activation pour produire une sortie.",
+        "choices": [
+            "Un point de données spécifique utilisé pour l'entraînement du réseau.",
+            "Un algorithme qui choisit automatiquement la meilleure fonction d'activation pour un réseau.",
+            "Une unité de calcul qui reçoit des entrées, les pondère, les somme, et applique une fonction d'activation pour produire une sortie.",
+            "Un mécanisme de régulation qui empêche le réseau de devenir trop complexe et de surajuster."
+        ],
+        "imgURI": "https://live.staticflickr.com/1816/30212411048_2a1d7200e2_b.jpg"
+    },
+    {
+        "question": "Qu'est-ce que la propagation avant (feedforward) dans les réseaux de neurones ?",
+        "answer": "Un processus où les informations se déplacent dans une seule direction à travers le réseau, de l'entrée vers la sortie, sans boucles de rétroaction.",
+        "choices": [
+            "Un processus d'optimisation qui ajuste les poids après chaque prédiction.",
+            "Un mécanisme de rétropropagation qui calcule l'erreur en comparant la sortie prédite à la vérité terrain.",
+            "Un processus où les informations se déplacent dans une seule direction à travers le réseau, de l'entrée vers la sortie, sans boucles de rétroaction.",
+            "Un algorithme de tri qui organise les neurones dans un ordre spécifique pour l'entraînement."
+        ],
+        "imgURI": "https://live.staticflickr.com/1816/30212411048_2a1d7200e2_b.jpg"
+    },
+    {
+        "question": "Qu'est-ce que l'erreur quadratique moyenne (MSE) indique-t-elle lors de l'évaluation d'un modèle de Machine Learning ?",
+        "answer": "Elle mesure la moyenne des carrés des erreurs, c'est-à-dire, la différence moyenne au carré entre les valeurs estimées et les valeurs réelles.",
+        "choices": [
+            "Elle mesure l'erreur typique qu'un modèle fait dans ses prédictions.",
+            "Elle mesure la moyenne des carrés des erreurs, c'est-à-dire, la différence moyenne au carré entre les valeurs estimées et les valeurs réelles.",
+            "Elle indique le pourcentage de variation dans la variable dépendante que le modèle n'a pas réussi à prévoir.",
+            "Elle calcule la somme des erreurs absolues entre les prédictions et les valeurs réelles."
+        ],
+        "imgURI": "https://live.staticflickr.com/1816/30212411048_2a1d7200e2_b.jpg"
+    },
+    {
+        "question": "En quoi l'erreur absolue moyenne (MAE) diffère-t-elle de l'erreur quadratique moyenne (MSE) ?",
+        "answer": "La MAE mesure la moyenne des valeurs absolues des erreurs, ce qui la rend moins sensible aux valeurs aberrantes par rapport à la MSE.",
+        "choices": [
+            "La MAE est simplement le carré de la MSE.",
+            "La MAE prend en compte la direction de l'erreur, tandis que la MSE non.",
+            "La MAE mesure la moyenne des valeurs absolues des erreurs, ce qui la rend moins sensible aux valeurs aberrantes par rapport à la MSE.",
+            "La MAE est toujours plus grande que la MSE car elle utilise des valeurs absolues."
+        ],
+        "imgURI": "https://live.staticflickr.com/1816/30212411048_2a1d7200e2_b.jpg"
+    },
+    {
+        "question": "Que signifie un coefficient de détermination (R²) proche de 1 lors de l'évaluation d'un modèle de régression ?",
+        "answer": "Cela indique que le modèle explique une grande partie de la variabilité des données autour de la moyenne.",
+        "choices": [
+            "Cela signifie que le modèle ne peut pas expliquer la variabilité des données.",
+            "Cela indique une forte corrélation entre les caractéristiques et la variable cible.",
+            "Cela indique que le modèle explique une grande partie de la variabilité des données autour de la moyenne.",
+            "Cela montre que le modèle est surajusté et ne généralisera probablement pas bien aux données inconnues."
+        ],
+        "imgURI": "https://live.staticflickr.com/1816/30212411048_2a1d7200e2_b.jpg"
+    },      
+    {
+        "question": "Quel est le principe de la Binary Cross-Entropy, également connue sous le nom de Log Loss, dans les modèles de classification binaire ?",
+        "answer": "C'est une fonction de perte qui mesure la performance d'un modèle de classification dont la sortie est une probabilité comprise entre 0 et 1.",
+        "choices": [
+            "Elle mesure l'exactitude de la classification en comptant simplement le nombre d'erreurs.",
+            "C'est une fonction de perte qui mesure la performance d'un modèle de classification dont la sortie est une probabilité comprise entre 0 et 1.",
+            "Elle est utilisée pour des problèmes de régression et mesure l'écart entre les valeurs prédites et réelles.",
+            "Elle calcule la moyenne des différences absolues entre les prédictions et les vraies classes."
+        ],
+        "imgURI": "https://live.staticflickr.com/1816/30212411048_2a1d7200e2_b.jpg"
+    },    
+    {
+        "question": "Quand utiliseriez-vous la Categorical Cross-Entropy Loss par rapport à la Binary Cross-Entropy Loss ?",
+        "answer": "La Categorical Cross-Entropy Loss est utilisée pour les problèmes de classification multiclasse où les étiquettes sont mutuellement exclusives.",
+        "choices": [
+            "La Categorical Cross-Entropy Loss est utilisée pour les problèmes de classification binaire.",
+            "La Binary Cross-Entropy Loss est préférée lorsque les classes ne sont pas mutuellement exclusives.",
+            "La Categorical Cross-Entropy Loss est utilisée pour les problèmes de classification multiclasse où les étiquettes sont mutuellement exclusives.",
+            "La Categorical Cross-Entropy Loss est utilisée pour les problèmes de régression uniquement."
+        ]
+    },
+    {
+        "question": "Pourquoi utilise-t-on la fonction d'activation sigmoid dans les neurones d'un réseau de neurones ?",
+        "answer": "La fonction d'activation sigmoid est utilisée pour modéliser la probabilité en sortie car elle produit une valeur comprise entre 0 et 1.",
+        "choices": [
+            "La fonction d'activation sigmoid est utilisée pour accélérer le processus d'apprentissage en normalisant les sorties.",
+            "Elle est principalement utilisée pour introduire la non-linéarité dans le modèle.",
+            "La fonction d'activation sigmoid est utilisée pour modéliser la probabilité en sortie car elle produit une valeur comprise entre 0 et 1.",
+            "La fonction sigmoid est utilisée pour réduire l'importance des caractéristiques moins significatives."
+        ]
     }
-    
     
          
 ]
